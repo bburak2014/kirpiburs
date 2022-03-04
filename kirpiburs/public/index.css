@@ -1,0 +1,76 @@
+body{
+    font-weight: bold;
+    text-align: center;
+    justify-content: center;
+}
+
+a{
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+
+}
+a:hover{
+  color: rgb(255, 255, 255);
+
+}
+.lclstrg{
+  background-color: #dc5f32;
+  color: white;
+}
+.lclstrg:hover{
+  box-shadow: 10px 10px 5px #aaaaaa;
+  border: 1px solid #BFBFBF;
+  color: white;
+
+
+}
+ 
+   .container-fluid::after {
+    content: "";
+    /* opacity: 0.2;
+    background: url("./student.jpg") no-repeat fixed top;
+   also change the blend mode to what suits you, from darken, to other 
+    many options as you deem fit
+    background-blend-mode: luminosity; 
+    */
+  
+    background-repeat:no-repeat;
+    background-size:cover;
+      top:-1rem;
+    left:0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    z-index: -1;
+    margin: 0;
+    padding: 0;
+    height:100%
+  }
+.reklam{
+    min-height: 30vh;
+    border: 1px solid red;
+}
+.baslık{
+    text-align: center;
+    background-color: rgb(247, 247, 247);
+    
+}
+.paginationmain{
+    font-size: 0.75vw;
+}
+@media only screen and (max-width: 600px) and (min-width: 0px) {
+    .paginationmain {
+        font-size: 1.2vw;
+    }
+  }
+  @media only screen and (max-width: 1000px) and (min-width: 601px) {
+    .paginationmain {
+        font-size: 1.5vw;
+    }
+  }
+  @media only screen and (max-width: 1600px) and (min-width: 1001px) {
+    .paginationmain {
+        font-size: 1vw;
+    }
+  }
+  

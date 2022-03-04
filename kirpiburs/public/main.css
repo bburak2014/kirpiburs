@@ -1,0 +1,156 @@
+body{
+    text-align: center;
+}
+.mynavbar{
+    background-color:#dc5f32;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .mynavbar .nav-link{
+      font-weight: bold;
+      opacity: 1;
+
+   }
+   .navbar-nav{
+     text-align: center;
+
+   }
+
+   .navbar-dark .navbar-nav .nav-link {
+    color: rgb(255, 255, 255);
+}
+@media only screen and (max-width: 1600px) and (min-width: 1203px) {
+   
+	.phonelink {
+		
+margin-left: 6rem;
+	 }
+ }
+
+ @media only screen and (min-width: 1202px) {
+    .navbar-nav.navbar-center {
+        position: relative;
+        left: 15%;
+     }
+	 .phonelink {
+		 
+margin-left: 3rem;
+      }
+  }
+ 
+   
+ 
+  .logoarea{
+      min-height: 10vh;
+      display: flex;
+      align-items: left;
+      flex-direction: column;
+      justify-content: left;
+
+      color: #dc5f32;
+       
+      background-color: rgb(252, 252, 252);
+  }  
+  .logoareaimg
+  {
+      max-height: 10vh;
+      max-width: 30vh;
+      float: left;
+      left: 0;
+      justify-content: left;
+
+  }
+  .hiza{
+	  text-align: right;
+	  justify-content: right;
+	  position:absolute;
+	  right: 1rem;
+	  top: 1.5rem
+  }
+  @media only screen and (max-width: 800px) and (min-width: 1px) {
+    .hiza {
+        font-size: 1.75vw;
+    }
+  }
+  
+
+ @import url("https://fonts.googleapis.com/css?family=Lato:400,700");
+ * {
+	 box-sizing: border-box;
+}
+  
+ @keyframes topAnimation {
+	 from {
+		 transform: translate(0rem, 0);
+	}
+	 to {
+		 transform: translate(0rem, 3.5rem);
+	}
+}
+ @keyframes bottomAnimation {
+	 from {
+		 transform: translate(-11.5rem, 0);
+	}
+	 to {
+		 transform: translate(0rem, 0);
+	}
+}
+ button.btn-2 {
+	 text-transform: uppercase;
+	 text-decoration: none;
+	 font-weight: 700;
+	 border: 0;
+	 position: relative;
+	 letter-spacing: 0.15em;
+	 margin: 0 auto;
+	 padding: 1rem 2.5rem;
+	 background: transparent;
+	 outline: none;
+	 font-size: 28px;
+	 color: #dc5f32;
+	 transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.15s;
+}
+.buttona{
+    color: #0e0d0d;
+
+}
+ button.btn-2::after, button.btn-2::before {
+	 border: 0;
+	 content: "";
+	 position: absolute;
+	 height: 40%;
+	 width: 10%;
+	 transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+	 z-index: -2;
+	 border-radius: 50%;
+}
+ button.btn-2::before {
+	 border: 0;
+	 background-color: #c92918;
+	 top: -0.75rem;
+ 	 animation: topAnimation 2s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.25s infinite alternate;
+}
+ button.btn-2::after {
+	 background-color: #e74c3c;
+	 top: 3rem;
+ 	 animation: bottomAnimation 2s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.5s infinite alternate;
+}
+ button.btn-2:hover {
+	 color: white;
+}
+ button.btn-2:hover::before, button.btn-2:hover::after {
+	 top: 0;
+	 height: 100%;
+	 width: 100%;
+	 border-radius: 0;
+	 animation: none;
+     background-color: #dc5f32;
+}
+ button.btn-2:hover::after {
+	 left: 0rem;
+}
+ button.btn-2:hover::before {
+	 top: 0.5rem;
+	 left: 0.35rem;
+}
+ 
